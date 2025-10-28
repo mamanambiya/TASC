@@ -8,11 +8,39 @@ While TASC functions as a central decision-making body, all of its decisions are
 
 TASC organizes and monitors its technical alignment activities through a [GitHub Project board](https://github.com/orgs/ga4gh/projects/9/views/1), where you can find and track the progress of current issues and initiatives.
 
+## Repository Structure
+
+This repository is organized into the following directories:
+
+```
+/
+├── README.md (overview & quick reference)
+├── /adr/ (Architectural Decision Records)
+├── /governance/ (TASC operating charter)
+├── /recommendations/ (TASC outputs)
+├── /drafts/ (work in progress)
+└── /service-info/ (service type registry)
+```
+
+### Directory Descriptions
+
+- **`/adr/`** - Architectural Decision Records documenting key technical decisions made by TASC. Each ADR captures what was decided, why, and the consequences. ADRs are immutable historical records. See [adr/README.md](adr/README.md) for the complete index.
+
+- **`/governance/`** - TASC's governance charter defining how TASC operates, including membership, meeting format, and decision-making processes.
+
+- **`/recommendations/`** - Approved TASC recommendations and policy documents that provide guidance to GA4GH work streams. These include API standards, process guidelines, and technical specifications.
+
+- **`/drafts/`** - Work-in-progress documents under development. Documents move from drafts to recommendations upon approval.
+
+- **`/service-info/`** - The GA4GH Service Info Type Registry, which maintains standardized service type identifiers for GA4GH API servers enabling service discovery.
+
 ## Table of Contents
+
+- [Repository Structure](#repository-structure)
 - [TASC Structure](#tasc-structure)
-- [TASC Members](#tasc-members)   
+- [TASC Members](#tasc-members)
 - [Group Meeting Format](#group-meeting-format)
-- [Decision-Making Process](#decision-making-process)   
+- [Decision-Making Process](#decision-making-process)
 - [Issue labels](#issue-labels)   
 
 ## TASC Structure
@@ -159,7 +187,7 @@ For asynchronous discussion, members use:
 6. If approval not reached through multiple rounds, TASC Leadership makes final decision
 7. Leadership can take decisions if two consecutive meetings are not quorate
 8. Proposals open for more than 12 months must be taken to vote
-9. Final decisions recorded in [Architectural Decision Records](https://adr.github.io/)
+9. Final decisions recorded in [Architectural Decision Records](adr/)
 10. CPO may reopen issues or review decisions in consultation with PSC, TASC, SLC, or GA4GH Executive Committee
 
 ### **Step 4: Dissemination**
