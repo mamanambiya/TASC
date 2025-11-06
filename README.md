@@ -48,11 +48,6 @@ The CPO ensures that the team creates GA4GH-wide technical alignment and that th
 
 Two volunteer representatives from each technical Work Stream and Data Security–preferably the Work Stream Co-leads–provide knowledge and insight for their respective GA4GH products and communicate as liaisons.
 
-#### DaMaSC Sub-group Representative
-- **Kathy Reinold** - DaMaSC
-
-A representative from the DaMaSC sub-group participates in TASC decisions as a voting member.
-
 ### Non-Voting Members (Advisory/Contributors)
 
 #### GA4GH Staff
