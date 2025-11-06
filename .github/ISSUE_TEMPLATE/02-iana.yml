@@ -1,0 +1,172 @@
+name: GA4GH IANA Registration
+description: Request a GA4GH IANA registration
+title: "[IANA]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # GA4GH IANA registration Submission Form
+        
+        Welcome! This form helps you submit GA4GH IANA requests to TASC (Technical Alignment Sub-Committee).
+        
+        **Before you begin:**
+        - Ensure you do want to submit an IANA request
+        - [Reviewed the IANA form](https://www.iana.org/form/media-types) and required fields/data
+        - Made yourself aware of #36 concerning GA4GH and IANA requests
+
+        Many of the requests build off the IANA form so please cross-reference with that form to verify what certain fields might refer to
+        
+        ---
+  - type: input
+    id: issue-title
+    attributes:
+      label: Issue Title
+      description: Provide a clear, concise title for your issue
+      placeholder: "e.g., GA4GH IANA Namespace for "
+    validations:
+      required: true
+  - type: input
+    id: media-type
+    attributes:
+      label: Media type
+      description: Provide the media type as detailed https://www.iana.org/assignments/top-level-media-types e.g. text, application
+      placeholder: "e.g., GA4GH IANA Namespace for "
+    validations:
+      required: true
+  - type: dropdown
+    id: subtype-prefix
+    attributes:
+      label: Subtype-prefix
+      description: What type of prefix are you using?
+      options:
+        - Vendor Tree (vnd. prefix - recommended)
+        - Standards Tree (no prefix)
+        - Personal Tree (prs. prefix)
+    validations:
+      required: true
+  - type: input
+    id: subtype-name
+    attributes:
+      label: Subtype name
+      description: Provide the subtype name e.g. ga4gh.passport+jwt
+    validations:
+      required: true
+  - type: input
+    id: required-parameters
+    attributes:
+      label: Required parameters
+      description: Do you require any parameters? If none, then enter N/A
+    validations:
+      required: true
+  - type: input
+    id: optional-parameters
+    attributes:
+      label: Optional parameters
+      description: Do you require any optional parameters? If none, then enter N/A
+    validations:
+      required: true
+  - type: input
+    id: encoding-considerations
+    attributes:
+      label: Encoding considerations
+      description: Will this be encoded as 7-bit, 8-bt, binary or framed?
+    validations:
+      required: true
+  - type: input
+    id: security
+    attributes:
+      label: Security
+      description: Have you considered any security considerations? If not then flag so here to discuss with Data Security
+    validations:
+      required: true
+  - type: input
+    id: interoperability
+    attributes:
+      label: Interoperability
+      description: Have you considered any interoperability questions as stated in RFC 6838 section 4.5?
+    validations:
+      required: true
+  - type: input
+    id: specification
+    attributes:
+      label: Specification/product
+      description: What specification/product does this relate to?
+    validations:
+      required: true
+  - type: input
+    id: applications
+    attributes:
+      label: Applications/use
+      description: What applications use/will use this media type
+    validations:
+      required: true
+  - type: checkboxes
+    id: raising-workstreams
+    attributes:
+      label: Work Streams Raising This Issue
+      description: Select all work streams that are raising this issue
+      options:
+        - label: Clinical & Phenotypic Data (Clin/Pheno)
+        - label: Cloud Work Stream
+        - label: Data Security
+        - label: Data Use & Researcher IDs (DURI)
+        - label: Discovery
+        - label: Genomic Knowledge Standards (GKS)
+        - label: Large Scale Genomics (LSG)
+        - label: Regulatory & Ethics (REWS)
+        - label: Genomic Implementation Forum (GIF)
+        - label: Technical Team
+        - label: Other (specify below)
+    validations:
+      required: true
+  - type: checkboxes
+    id: impacted-workstreams
+    attributes:
+      label: Work Streams That Will Be Impacted
+      description: Select all work streams that will be affected by this media type
+      options:
+        - label: Clinical & Phenotypic Data (Clin/Pheno)
+        - label: Cloud Work Stream
+        - label: Data Security
+        - label: Data Use & Researcher IDs (DURI)
+        - label: Discovery
+        - label: Genomic Knowledge Standards (GKS)
+        - label: Large Scale Genomics (LSG)
+        - label: Regulatory & Ethics (REWS)
+        - label: Genomic Implementation Forum (GIF)
+        - label: Technical Team
+        - label: Other (specify below)
+    validations:
+      required: false
+  - type: input
+    id: other-impacted-groups
+    attributes:
+      label: Other Groups That Will Be Impacted
+      description: If you selected "Other", please specify the groups
+      placeholder: "e.g., Driver Projects, External Partners, etc."
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Key Stakeholders to Consult
+      description: Identify stakeholders who should be involved in the solution
+      placeholder: |
+        Organizations/Communities:
+        - Which organizations will be affected?
+        - What communities should be consulted?
+        
+        Technical Experts:
+        - Who has relevant technical expertise?
+        - Are there subject matter experts to involve?
+        
+        Decision Makers:
+        - Who needs to approve or be informed?
+        - Are there external partners to engage?
+    validations:
+      required: false
+  - type: input
+    id: additional
+    attributes:
+      label: Additional information
+      description: Any additional information needed/to be provided?
+    validations:
+      required: false
