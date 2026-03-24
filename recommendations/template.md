@@ -7,6 +7,7 @@
 **Authors**: [Author names, comma-separated]
 **Date:** YYYY-MM-DD
 **Status:** [Draft | Approved | Superseded]
+**Keywords**: [e.g., api, pagination, interoperability, security, governance, versioning]
 
 ## Abstract
 
