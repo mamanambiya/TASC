@@ -1,7 +1,7 @@
 # [Short Recommendation Title]
 
 **Source**: TASC
-**Recommendation**: TASC-REC-XX
+**Recommendation**: GA4GH-REC-XX
 **Title**: [Full descriptive title]
 **Related GitHub issues**: [#N](https://github.com/ga4gh/TASC/issues/N)
 **Authors**: [Author names, comma-separated]
