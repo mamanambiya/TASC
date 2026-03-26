@@ -24,7 +24,7 @@ This repository is organized into the following directories:
 
 ### Directory Descriptions
 
-- **`/adr/`** - Architectural Decision Records documenting key technical decisions made by TASC. Each ADR captures what was decided, why, and the consequences. ADRs are immutable historical records. See [adr/README.md](adr/README.md) for the complete index.
+- **`/adr/`** - Architectural Decision Records documenting key technical decisions made by TASC. Each ADR captures what was decided, why, and the consequences. ADRs are immutable historical records. See [adr/template.md](adr/template.md) for the standard format.
 
 - **`/governance/`** - TASC's governance charter defining how TASC operates, including membership, meeting format, and decision-making processes.
 
