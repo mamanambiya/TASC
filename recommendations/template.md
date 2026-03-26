@@ -1,13 +1,16 @@
 # [Short Recommendation Title]
 
-**Source**: TASC
-**Recommendation**: GA4GH-REC-XX
-**Title**: [Full descriptive title]
-**Related GitHub issues**: [#N](https://github.com/ga4gh/TASC/issues/N)
-**Authors**: [Author names, comma-separated]
-**Date:** YYYY-MM-DD
-**Status:** [Draft | Approved | Superseded]
-**Keywords**: [e.g., api, pagination, interoperability, security, governance, versioning]
+**Source**: TASC  
+**Recommendation**: GA4GH-REC-XX  
+**Title**: [Full descriptive title]  
+**Related GitHub issues**: [#N](https://github.com/ga4gh/TASC/issues/N)  
+**Raised by**: [Name (Work Stream), e.g., Alex Wagner (GKS), Mamana Mbiyavanga (LSG)]  
+**Authors**: [Author names, comma-separated]  
+**Date:** YYYY-MM-DD  
+**Status:** [Draft | Approved | Superseded]  
+**Keywords**: [e.g., api, pagination, interoperability, security, governance, versioning]  
+**Work Streams Impacted**: [e.g., Cloud, Discovery, DaMaSC]  
+**Products Affected**: [e.g., Beacon v2, TRS, Refget]  
 
 ## Abstract
 

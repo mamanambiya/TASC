@@ -1,12 +1,16 @@
 # Service Info Type Registry Guide recommendation
 
 **Source**: TASC  
-**Recommendation**: GA4GH-02  
+**Recommendation**: GA4GH-REC-02  
 **Title**: Service Info Type Registry Guide  
 **Related GitHub issues**: [#1](https://github.com/ga4gh/TASC/issues/1), [#16](https://github.com/ga4gh/TASC/issues/16), [#67](https://github.com/ga4gh/TASC/issues/67)  
-**Author**: Jeremy Adams, John Marshall, Mamana Mbiyavanga  
+**Raised by**: Melissa Konopko (Technical Team)  
+**Authors**: Jeremy Adams, John Marshall, Mamana Mbiyavanga  
 **Date:** 2025-01-28  
 **Status:** Approved  
+**Keywords**: service-info, registry, discovery, naming  
+**Work Streams Impacted**: All work streams  
+**Products Affected**: All GA4GH API products  
 
 ## Abstract
 
@@ -232,27 +236,27 @@ Implementers MAY choose to require authentication for Service Info endpoints in 
 
 ### Use case - service discovery in networks
 
-**Scenario**: A client needs to locate DRS (Data Repository Service) servers within a federated GA4GH network.
+**Scenario**: A client needs to locate DRS (Data Repository Service) servers within a federated GA4GH network.  
 
-**Solution**: The client queries known network nodes for their Service Info endpoints, filters responses by service type `{"group": "org.ga4gh", "artifact": "drs"}`, and identifies available DRS servers without manual configuration.
+**Solution**: The client queries known network nodes for their Service Info endpoints, filters responses by service type `{"group": "org.ga4gh", "artifact": "drs"}`, and identifies available DRS servers without manual configuration.  
 
-**Benefits**: Automatic service discovery, reduced configuration burden, dynamic network adaptation.
+**Benefits**: Automatic service discovery, reduced configuration burden, dynamic network adaptation.  
 
 ### Use case - capability negotiation
 
-**Scenario**: A workflow engine needs to determine if a server supports specific GA4GH APIs before submitting jobs.
+**Scenario**: A workflow engine needs to determine if a server supports specific GA4GH APIs before submitting jobs.  
 
-**Solution**: The engine queries the server's Service Info endpoint, checks for the required service types (e.g., TES, WES), and validates version compatibility before proceeding.
+**Solution**: The engine queries the server's Service Info endpoint, checks for the required service types (e.g., TES, WES), and validates version compatibility before proceeding.  
 
-**Benefits**: Prevents runtime failures, enables graceful degradation, supports multi-version environments.
+**Benefits**: Prevents runtime failures, enables graceful degradation, supports multi-version environments.  
 
 ### Use case - monitoring and observability
 
-**Scenario**: A network operator needs to monitor the health and availability of GA4GH services across multiple institutions.
+**Scenario**: A network operator needs to monitor the health and availability of GA4GH services across multiple institutions.  
 
-**Solution**: Monitoring tools periodically query Service Info endpoints across the network, track service availability, detect version changes, and alert on inconsistencies or outages.
+**Solution**: Monitoring tools periodically query Service Info endpoints across the network, track service availability, detect version changes, and alert on inconsistencies or outages.  
 
-**Benefits**: Proactive issue detection, network-wide visibility, compliance verification.
+**Benefits**: Proactive issue detection, network-wide visibility, compliance verification.  
 
 ## Considerations
 

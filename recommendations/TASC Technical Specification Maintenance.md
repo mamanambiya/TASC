@@ -1,12 +1,30 @@
 # TASC Technical Specification Development
 
 **Source**: TASC  
-**Recommendation**: GA4GH-04  
+**Recommendation**: GA4GH-REC-04  
 **Title**: TASC Technical Specification Development: Policy and processes for developing and communicating maturity of GA4GH Technical Specifications  
 **Related GitHub issues**: [#64](https://github.com/ga4gh/TASC/issues/64), [#49](https://github.com/ga4gh/TASC/issues/49), [#16](https://github.com/ga4gh/TASC/issues/16), [#46](https://github.com/ga4gh/TASC/issues/46)  
-**Author**: Alex Wagner, Larry Babb, Robert Freimuth, GKS Work Stream  
+**Raised by**: Alex Wagner (GKS)  
+**Authors**: Alex Wagner, Larry Babb, Robert Freimuth, GKS Work Stream  
 **Date:** 2025-07-18  
 **Status:** Approved  
+**Keywords**: maturity-model, versioning, specification, lifecycle  
+**Work Streams Impacted**: All work streams  
+**Products Affected**: All GA4GH specifications  
+
+## Table of contents
+
+- [Abstract](#abstract)
+- [Document Purpose](#document-purpose)
+- [Alignment with the GA4GH Product Development Processes](#alignment-with-the-ga4gh-product-development-processes)
+- [Feature Maturity Levels](#feature-maturity-levels)
+  - [Maturity Level Criteria](#maturity-level-criteria)
+  - [Maturity Advancement Process](#maturity-advancement-process)
+  - [Data Class Inheritance and Property Maturity](#data-class-inheritance-and-property-maturity)
+  - [Communicating Maturity Level](#communicating-maturity-level)
+- [Product Feature Development Process](#product-feature-development-process)
+- [Specification Releases and Versioning](#specification-releases-and-versioning)
+- [Contributors](#contributors)
 
 ## Abstract
 
@@ -22,7 +40,7 @@ The purpose of this document is to clearly define the maturity model and release
 
 ![][image1]
 
-***Figure 1 \- The Innovation Adoption Lifecycle*** ([**source**](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle))***.** The Innovation Adoption Lifecycle illustrates adoption rates (y-axis) for new technologies over time (x-axis). Innovators (leftmost on the time axis) are among the first to adopt a new technology, and laggards (rightmost) are among the last, reflecting the differing needs for innovation and stability by these community groups. Adopters in every category along the innovation adoption lifecycle benefit from communication about the maturity of technical specification components generated in GA4GH technical products. Communicating when a component is ready for implementation by groups along the innovation / stability spectrum is a primary goal of the maturity model, enabling adopters to engage at a time that is appropriate for their organizational needs.*
+***Figure 1 \- The Innovation Adoption Lifecycle*** ([**source**](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle))***.** The Innovation Adoption Lifecycle illustrates adoption rates (y-axis) for new technologies over time (x-axis). Innovators (leftmost on the time axis) are among the first to adopt a new technology, and laggards (rightmost) are among the last, reflecting the differing needs for innovation and stability by these community groups. Adopters in every category along the innovation adoption lifecycle benefit from communication about the maturity of technical specification components generated in GA4GH technical products. Communicating when a component is ready for implementation by groups along the innovation / stability spectrum is a primary goal of the maturity model, enabling adopters to engage at a time that is appropriate for their organizational needs.*  
 
 ## *Alignment with the GA4GH Product Development Processes*
 
@@ -41,7 +59,7 @@ It is not expected that every category of product feature developed for a GA4GH 
 | Normative | The product feature has been sufficiently tested to warrant long-term support from the specification maintainers. This is considered stable. | No backwards-incompatible changes will happen within the released major version. | The product feature will be fully supported by product reference implementations. |
 | Deprecated | The product feature was previously released at a trial use or normative maturity, but will be discontinued in a subsequent version. | Use of the product feature will be discontinued in a subsequent minor version (for Trial Use maturity) or major version (for Normative maturity). | This product feature will no longer be supported once removed from the specification. |
 
-***Table 1 \- Product feature maturity level criteria and commitments.***
+***Table 1 \- Product feature maturity level criteria and commitments.***  
 
 ## *Maturity Advancement Process*
 
@@ -49,19 +67,19 @@ Product feature maturity levels are to be reviewed and advanced by consensus amo
 
 ### Developing a Draft Product Feature
 
-**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4)
+**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4)  
 
-**Criteria:** *Draft* product feature development work should be based on real use cases across multiple environments (aligned with [**GA4GH Product Development 14.5**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_5:~:text=14.5%20Development%20work%20should%20be%20based%20on%20real%20use%20cases%20across%20multiple%20environments.)). Requirements may result directly from a [**landscape analysis of the problem domain**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_4), or may emerge in the course of technical specification development. It is expected that the need for product features are first discussed in a community forum (e.g. GitHub Discussions, product group calls).
+**Criteria:** *Draft* product feature development work should be based on real use cases across multiple environments (aligned with [**GA4GH Product Development 14.5**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_5:~:text=14.5%20Development%20work%20should%20be%20based%20on%20real%20use%20cases%20across%20multiple%20environments.)). Requirements may result directly from a [**landscape analysis of the problem domain**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_4), or may emerge in the course of technical specification development. It is expected that the need for product features are first discussed in a community forum (e.g. GitHub Discussions, product group calls).  
 
-**Process:** Follow [**the GA4GH product feature development process**](#product-feature-development-process). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Disagreements are resolved per Work Stream and GA4GH processes.
+**Process:** Follow [**the GA4GH product feature development process**](#product-feature-development-process). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Disagreements are resolved per Work Stream and GA4GH processes.  
 
 ### Advancing from Draft to Trial Use
 
-**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4), [**product implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2)
+**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4), [**product implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2)  
 
-**Criteria:** Advancing a *draft* product feature to *trial use* should include at least two independent product implementers that commit to supporting the *draft* product feature once it has been advanced to *trial use*. At least one of these implementations must be open (aligned with [**GA4GH Product Development 14.8.3**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_5:~:text=14.8.3%20implementations)). Advancing a product feature to *trial use* also mandates a minor version increment at the next [**release**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.1ent9dk649ub). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Disagreement resolution is handled per Work Stream and GA4GH processes.
+**Criteria:** Advancing a *draft* product feature to *trial use* should include at least two independent product implementers that commit to supporting the *draft* product feature once it has been advanced to *trial use*. At least one of these implementations must be open (aligned with [**GA4GH Product Development 14.8.3**](https://www.ga4gh.org/our-products/development-and-approval-process/#section_5:~:text=14.8.3%20implementations)). Advancing a product feature to *trial use* also mandates a minor version increment at the next [**release**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.1ent9dk649ub). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Disagreement resolution is handled per Work Stream and GA4GH processes.  
 
-**Process:** A [**ballot release**](#pre-releases) is created that describes draft models under evaluation for advancement to trial use. A survey is sent to all [**Product Implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2) that have indicated they are implementing one or more features under evaluation for advance to Trial Use. This survey includes:
+**Process:** A [**ballot release**](#pre-releases) is created that describes draft models under evaluation for advancement to trial use. A survey is sent to all [**Product Implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2) that have indicated they are implementing one or more features under evaluation for advance to Trial Use. This survey includes:  
 
 1. Name of [**Product Implementer**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2)  
 2. Selection of a previously described implementation  
@@ -72,9 +90,9 @@ There is a minimum 1-week review period for Product Implementers to respond, tho
 
 ### Advancing from Trial Use to Normative
 
-**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4), [**product implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2), [**Work Stream leads**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.mg8fktfu4p72)
+**Decision-makers: [Feature developers](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.69fvnn4tbegq)**, [**product owners**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.j3wp65n0i1d4), [**product implementers**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.cg3l1hng99o2), [**Work Stream leads**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.mg8fktfu4p72)  
 
-**Criteria:** A *normative* model should have demonstrated interoperability of multiple data generation and data consumption implementations, and should include implementations beyond those used to advance a model to Trial Use. Advancing a product feature to *normative* also mandates a minor version increment at the next [**release**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.1ent9dk649ub). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Community consultation and disagreement resolution are handled per Work Stream and GA4GH processes.
+**Criteria:** A *normative* model should have demonstrated interoperability of multiple data generation and data consumption implementations, and should include implementations beyond those used to advance a model to Trial Use. Advancing a product feature to *normative* also mandates a minor version increment at the next [**release**](https://docs.google.com/document/d/1xPFXRF7_Ppe5SDBHTBa1E-MBHHNtoc1Q-jZ1olOrtc4/edit?tab=t.0#heading=h.1ent9dk649ub). As part of this process, it is expected that consensus among the decision-makers was reached and major design decisions documented. Community consultation and disagreement resolution are handled per Work Stream and GA4GH processes.  
 
 ## *Data Class Inheritance and Property Maturity*
 

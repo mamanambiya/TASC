@@ -1,11 +1,30 @@
 # TASC Governance and Leadership Charter
 
-**Document Type**: Governance Charter
-**Source**: TASC
-**Title**: TASC Governance and Leadership Charter
-**Related GitHub issues**: [#65](https://github.com/ga4gh/TASC/issues/65)
-**Approved**: 2024-08-25
-**Status:** Approved
+**Document Type**: Governance Charter  
+**Document ID**: TASC-GOV-01  
+**Source**: TASC  
+**Title**: TASC Governance and Leadership Charter  
+**Related GitHub issues**: [#65](https://github.com/ga4gh/TASC/issues/65)  
+**Authors**: TASC Leadership  
+**Date**: 2024-08-25  
+**Status**: Approved  
+**Keywords**: governance, charter, leadership, decision-making  
+**Work Streams Impacted**: All work streams  
+
+## Table of contents
+
+- [Abstract](#abstract)
+- [Mission Statement and Scope](#mission-statement-and-scope)
+- [TASC Structure](#tasc-structure)
+  - [Membership](#membership)
+- [Group Meeting Format](#group-meeting-format)
+- [Decision-Making Process](#decision-making-process)
+  - [Step 1: Collecting and Evaluating Issues](#step-1-collecting-and-evaluating-issues)
+  - [Step 2: Working on a Solution](#step-2-working-on-a-solution)
+  - [Step 3: Making Decisions](#step-3-making-decisions)
+  - [Step 4: Dissemination](#step-4-dissemination)
+- [Additional points](#additional-points)
+- [Contributors](#contributors)
 
 ## Abstract
 

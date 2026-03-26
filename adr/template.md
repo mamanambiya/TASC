@@ -1,8 +1,11 @@
-# ADR-XXX: [Short Decision Title]
+# TASC-ADR-XXX: [Short Decision Title]
 
-**Date:** YYYY-MM-DD | **Status:** [Proposed | Accepted | Deprecated | Superseded]
+**Date:** YYYY-MM-DD | **Status:** [Proposed | Accepted | Deprecated | Superseded]  
 
-**Deciders:** [List key decision-makers]
+**Deciders:** [List key decision-makers]  
+**Keywords:** [e.g., maturity-model, versioning, governance, api, security]  
+**Work Streams Impacted:** [e.g., Cloud, Discovery, DaMaSC]  
+**Products Affected:** [e.g., Beacon v2, TRS, Refget]  
 
 ---
 
@@ -10,10 +13,10 @@
 
 [Describe the problem and why a decision is needed. What forces are at play?]
 
-**The Problem:**
+**The Problem:**  
 - [Describe the issue requiring a decision]
 
-**Alternatives Considered:**
+**Alternatives Considered:**  
 
 1. **[Alternative 1]**
    - ✅ [Pro]
@@ -33,7 +36,7 @@
 
 [State the decision clearly. Use active voice and full sentences.]
 
-**Key Points:**
+**Key Points:**  
 - [Point 1]
 - [Point 2]
 
@@ -53,7 +56,7 @@
 
 ### Risks & Mitigations
 
-**Risk:** [Description]
+**Risk:** [Description]  
 - **Mitigation:** [How to address]
 
 ---
