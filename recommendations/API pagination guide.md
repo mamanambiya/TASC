@@ -1,12 +1,16 @@
 # API pagination guide recommendation
 
 **Source**: TASC  
-**Recommendation**: GA4GH-01  
+**Recommendation**: GA4GH-REC-01  
 **Title**: API pagination guide  
-**Related GitHub issues**: [TASC\#29](https://github.com/ga4gh/TASC/issues/29)  
-**Author**: Mamana Mbiyavanga, Andy Yates  
+**Related GitHub issues**: [#29](https://github.com/ga4gh/TASC/issues/29)  
+**Raised by**: Jeremy Adams (Cloud)  
+**Authors**: Mamana Mbiyavanga, Andy Yates  
 **Date:** 2024-11-25  
-**Status:** Approved
+**Status:** Approved  
+**Keywords**: api, pagination, interoperability, cursor, offset  
+**Work Streams Impacted**: Discovery, Cloud, LSG  
+**Products Affected**: TRS, Beacon v2, Data Connect  
 
 ## Abstract
 
@@ -198,19 +202,19 @@ Because pagination forces data streaming over multiple requests, there is a poss
 
 ### Use case random seeking within a result set
 
-**Use page-based pagination**
+**Use page-based pagination**  
 
 Random-seeking is a functionality normally requested in human interaction interfaces or where more flexibility needs to be afforded to a client. In the first example, consider an interface which displays the results of a search. Using random-seeking allows a client to skip an arbitrary number of pages ahead in the results or configure the number of records displayed per page. By using random-seeking a product can afford future clients the ability to configure their paging requirements without enforcing a predetermined policy on all clients. It also allows a client to walk back and forth along a result set. Many underlying data querying technologies implement random seeking (e.g. Solr, ElasticSearch, MongoDB) and as such adoption is easy.
 
 ### Use case parallel block retrieval
 
-**Use page-based pagination**
+**Use page-based pagination**  
 
 To speed up results retrieval, a client may wish to split results retrieval into multiple parallel requests. A client can construct URLs representing a block of data to retrieve based on a specified size and page into the results set. Parameters must be predictable and allow random seeking within a response (see above use-case).
 
 ### Use case streaming large result sets
 
-**Use page-based pagination**
+**Use page-based pagination**  
 
 When encountering the “Deep Paging” issue i.e. where the number of results is a large number, many data querying technologies switch to a token-based system where the last result returned is remembered to ensure pagination consistency and predictability. Results processing is normally a one-way process i.e. you cannot request a prior page.
 
