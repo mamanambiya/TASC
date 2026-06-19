@@ -132,3 +132,7 @@ Blog posts, announcements, and news articles that require persistent citation MA
 | Andy Yates | HDR UK |
 | Michael Baudis | University of Zurich |
 | Sasha Siegel | EMBL-EBI, GA4GH |
+
+## Notes
+
+OpenAI ChatGPT 5.5 (June 2026) was used to interpret and reformat original Google documents into this format. All content has been reviewed for accuracy.
