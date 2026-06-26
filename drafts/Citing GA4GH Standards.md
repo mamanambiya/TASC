@@ -2,15 +2,15 @@
 
 **Source**: TASC  
 **Recommendation**: GA4GH-REC-05  
-**Title**: Citing GA4GH Standards: A mechanism for creating digital object identifiers in support of GA4GH products
-**Related GitHub issues**: [#39](https://github.com/ga4gh/TASC/issues/39), [#179](https://github.com/samtools/hts-specs/issues/179)
-**Raised by**: Susan Fairley (Chief Standards Officer - GA4GH)
-**Authors**: Chen Chen, James Eddy, Ian Fore, Francesca Frexia, Angela Page, Alex Wagner, Andy Yates, Michael Baudis, Sasha Siegel
-**Date:** 2026-07-07
-**Status:** Draft
-**Keywords**: doi, citation, 
-**Work Streams Impacted**: All workstreams
-**Products Affected**: None directly
+**Title**: Citing GA4GH Standards: A mechanism for creating digital object identifiers in support of GA4GH products  
+**Related GitHub issues**: [#39](https://github.com/ga4gh/TASC/issues/39), [#179](https://github.com/samtools/hts-specs/issues/179)  
+**Raised by**: Susan Fairley (Chief Standards Officer - GA4GH)  
+**Authors**: Chen Chen, James Eddy, Ian Fore, Francesca Frexia, Angela Page, Alex Wagner, Andy Yates, Michael Baudis, Sasha Siegel  
+**Date:** 2026-07-07  
+**Status:** Draft  
+**Keywords**: doi, citation  
+**Work Streams Impacted**: All workstreams  
+**Products Affected**: None directly  
 
 ## Abstract
 
@@ -28,7 +28,13 @@ This recommendation provides a uniform and consistent way for citing GA4GH produ
 
 ## Recommendation
 
-Digital object identifiers (DOI) for GA4GH digital assets MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. Registration requests MUST be submitted to the originating work stream leads and then to the Technical Team unless another automated minting method has been created. DOIs MUST be registered using the GA4GH approved Registration Agency, currently CrossMap. DOI suffixes MUST be an obsufcated random string with no semantic meaning. The `<std_designator>` metadata field SHOULD follow the format `Work Stream Acronym + Document Name`. The Technical Team maintain a register of assigned suffixes to avoid clashing DOIs. DOIs MAY be created for any GA4GH digital output and for any version of said digital output. Newly approved products SHOULD request and assign a DOI to their digital materials including any specific versions. DOIs MUST NOT be minted for transitional or ephemeral materials e.g. a draft specification. GA4GH DOIs work alongside those created by other authorties and organisations e.g. publishers, open repositories and do not replace or supplant them. GA4GH DOIs MUST NOT redirect to another DOI URI. This recommendation MUST apply to GA4GH documentary outputs and MUST NOT apply to datasets, tools or other research resources.
+Digital object identifiers (DOI) for GA4GH digital assets MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. Registration requests MUST be submitted to the originating group's co-leads (e.g. work stream, NIF, GIF, TASC) and then to the Technical Team unless another automated minting method has been created. DOIs MUST be registered using the GA4GH approved Registration Agency, currently CrossMap. DOI suffixes MUST be an obsufcated random string with no semantic meaning. 
+
+The `<std_designator>` metadata field SHOULD follow the format `Work Stream Acronym + Document Name`. 
+
+The Technical Team maintain a register of assigned suffixes to avoid clashing DOIs. DOIs MAY be created for any GA4GH digital output and for any version of said digital output. Newly approved products SHOULD request and assign a DOI to their digital materials including any specific versions. DOIs MUST NOT be minted for transitional or ephemeral materials e.g. a draft specification. 
+
+GA4GH DOIs work alongside those created by other authorties and organisations e.g. publishers, open repositories and do not replace or supplant them. GA4GH DOIs MUST NOT redirect to another DOI URI. This recommendation MUST apply to GA4GH documentary outputs and MUST NOT apply to datasets, tools or other research resources.
 
 ## Background
 
@@ -74,12 +80,9 @@ Metadata associated with a DOI MUST accurately describe the referenced document 
 
 ## Use Cases
 
-[Concrete scenarios illustrating when and how this recommendation applies. Help readers understand the practical impact.]
-
 ### Use case - Approved GA4GH Products
 
-
-hen a product is approved through the GA4GH Product Development and Approval Process, DOIs MUST be assigned to support persistent and version-specific citation. At a minimum, DOI registration SHOULD be considered for:
+When a product is approved through the GA4GH Product Development and Approval Process, DOIs MUST be assigned to support persistent and version-specific citation. At a minimum, DOI registration SHOULD be considered for:
 
 - The approved version of the product specification
 - The current version of the product specification
