@@ -129,7 +129,7 @@ Blog posts, announcements, and news articles that require persistent citation MA
 | Chen Chen | Ontario Institute for Cancer Research, GA4GH |
 | James Eddy | Sage Bionetworks |
 | Ian Fore | Independent |
-| Francesca Frexia | Center for Advanced Studies, Research and Development |
+| Francesca Frexia | Centre for Advanced Studies, Research and Development in Sardinia (CRS4) |
 | Angela Page | Broad Institute, GA4GH |
 | Alex Wagner | Nationwide Children's Hospital |
 | Andy Yates | HDR UK |
