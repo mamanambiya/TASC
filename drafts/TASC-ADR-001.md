@@ -1,4 +1,4 @@
-# TASC-ADR-001: Use CrossRef as the DOI Registration Authority for GA4GH
+# TASC-ADR-001: Use Crossref as the DOI Registration Authority for GA4GH
 
 **Date:** 2026-03-23 | **Status:** Proposed
 
@@ -46,13 +46,13 @@ Any issuer must be able to support the release of standards based DOI records.
 
 ## Decision
 
-GA4GH will use CrossRef as the registration authority for DOI issuance and management. All GA4GH DOI registrations MUST be created through CrossRef.
+GA4GH will use Crossref as the registration authority for DOI issuance and management. All GA4GH DOI registrations MUST be created through Crossref.
 
 **Key Points:**
 
-- CrossRef is the authoritative registration authority for GA4GH DOI registrations
+- Crossref is the authoritative registration authority for GA4GH DOI registrations
 - All GA4GH-managed DOI registrations MUST use the assigned GA4GH DOI prefix
-- DOI metadata MUST be deposited through CrossRef
+- DOI metadata MUST be deposited through Crossref
 
 ---
 
@@ -76,4 +76,4 @@ None aware of
 ## References
 
 - **Full Policy:** [Citing GA4GH Standards Recommendation](../drafts/Citing%20GA4GH%20Standards.md)
-- \[CROSSREF_RECORDS\] \- [CrossRef Supported Record Types](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/)
+- \[CROSSREF_RECORDS\] \- [Crossref Supported Record Types](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/)
