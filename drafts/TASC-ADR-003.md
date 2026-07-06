@@ -86,7 +86,7 @@ GA4GH will generate DOI suffixes as opaque, non-semantic identifiers
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Standards Recommendation](../drafts/Citing%20GA4GH%20Standards.md)
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md)
 - **Related ADRs:** [TASC-ADR-001: Adopt a GA4GH DOI-Based Citation Framework](./TASC-ADR-001.md)
 
 ---

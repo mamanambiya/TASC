@@ -75,5 +75,5 @@ None aware of
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Standards Recommendation](../drafts/Citing%20GA4GH%20Standards.md)
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md)
 - \[CROSSREF_RECORDS\] \- [CrossRef Supported Record Types](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/)
