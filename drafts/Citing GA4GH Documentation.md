@@ -14,7 +14,7 @@
 
 ## Abstract
 
-This recommendation provides a uniform and consistent way for citing GA4GH products and documentary outputs by generation of a digital object identifier (DOI) where GA4GH is DOI prefix (`10.59756`). This guide is written from the understanding that DOIs will be minted via the CrossRef service. We follow recommendations from CrossRef \[CROSSREF\] to create DOIs whose suffixes are obfuscated and guidance on the required metadata to provide. The recommendation applies to GA4GH documentary outputs, including products, standards, protocols, technical specifications, white papers, and selected blog posts. It does not apply to datasets, tools, or other research resources.
+This recommendation provides a uniform and consistent way for citing GA4GH products and documentary outputs by generation of a digital object identifier (DOI) where the GA4GH DOI prefix is `10.59756`. This guide is written from the understanding that DOIs will be minted via the Crossref service. We follow recommendations from Crossref \[CROSSREF\] to create DOIs whose suffixes are obfuscated and guidance on the required metadata to provide. The recommendation applies to GA4GH documentary outputs, including products, standards, protocols, technical specifications, white papers, and selected blog posts. It does not apply to datasets, tools, or other research resources.
 
 ## Table of contents
 
@@ -25,12 +25,13 @@ This recommendation provides a uniform and consistent way for citing GA4GH produ
 - [Considerations](#considerations)
 - [References](#references)
 - [Contributors](#contributors)
+- [Notes](#notes)
 
 ## Recommendation
 
-For significant GA4GH documentary outputs (e.g. products, standards, protocols, technical specifications, white papers, and selected blog posts) requiring a persistent identifier, Digital object identifiers (DOI) MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. Registration requests MUST be submitted to the originating group's co-leads (e.g. work stream, NIF, GIF, TASC) and then to the Technical Team unless another automated minting method has been created. DOIs MUST be registered using the GA4GH approved Registration Agency, currently CrossRef. DOI suffixes MUST be an obfuscated random string with no semantic meaning. The *Detailed Guidance* lists the minimal metadata that MUST be provided, which include the `<std_designator>` metadata field, pointing to the reference Work Stream.
+For significant GA4GH documentary outputs (e.g. products, standards, protocols, technical specifications, white papers, and selected blog posts) requiring a persistent identifier, Digital object identifiers (DOI) MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. Registration requests MUST be submitted to the originating group's co-leads (e.g. work stream, NIF, GIF, TASC) and then to the Technical Team unless another automated minting method has been created. DOIs MUST be registered using the GA4GH approved Registration Agency, currently Crossref. DOI suffixes MUST be an obfuscated random string with no semantic meaning. The *Detailed Guidance* lists the minimal metadata that MUST be provided, which include the `<std_designator>` metadata field, pointing to the reference Work Stream.
 
-The `<std_designator>` metadata field SHOULD follow the format `Work Stream Acronym + Document Name`. 
+The `<std_designator>` metadata field SHOULD follow the format `<WORK_STREAM_ACRONYM>_<DOCUMENT_NAME>`.
 
 The Technical Team maintains a register of assigned suffixes to avoid clashing DOIs. DOIs MAY be created for any GA4GH digital output and for any version of a digital output. Newly approved products SHOULD request and assign a DOI to selected digital materials, including any specific versions. DOIs MUST NOT be minted for transitional or ephemeral materials e.g. a draft specification. 
 
@@ -38,13 +39,13 @@ GA4GH DOIs work alongside those created by other authorities and organisations e
 
 ## Background
 
-A way to cite GA4GH digital outputs such as specifications was originally discussed in 2016 in the hts-specs repository and later picked up on in 2022. The need was to create a way to cite a version of a GA4GH product without resorting to publications (the previous way this was achieved). Being able to generate DOIs would be one way of accomplishing this. Zenodo was cited as a possible solution but that results in a disconnect between the digital object a DOI points to and where said item is really maintained. Further discussion on Slack resulted in the conclusion that GA4GH should begin to mint DOIs itself and would do so through the CrossRef platform as this would support "Standards" record types \[CROSSREF_RECORDS\].
+A way to cite GA4GH digital outputs such as specifications was originally discussed in 2016 in the hts-specs repository and later picked up on in 2022. The need was to create a way to cite a version of a GA4GH product without resorting to publications (the previous way this was achieved). Being able to generate DOIs would be one way of accomplishing this. Zenodo was cited as a possible solution but that results in a disconnect between the digital object a DOI points to and where said item is really maintained. Further discussion on Slack resulted in the conclusion that GA4GH should begin to mint DOIs itself and would do so through the Crossref platform as this would support "Standards" record types \[CROSSREF_RECORDS\].
 
 ## Detailed Guidance
 
 GA4GH documentary outputs that represent approved standards, technical specifications, protocols, products, white papers, and other significant publications MUST be assigned a Digital Object Identifier (DOI) to provide a persistent, globally unique, and citable reference. The DOI MUST serve as the canonical identifier for the document and MUST remain stable regardless of future changes to document location or hosting infrastructure.
 
-DOIs MUST use GA4GH's registered CrossRef DOI prefix (10.59756) when minting DOIs for GA4GH documentary outputs. Associated metadata MUST be deposited with CrossRef and MUST include all information required to support identification and discovery of the referenced document, including title, authors, publication date, location, and the designated `<std_designator>` value. The required metadata are listed under *Metadata Management*.
+DOIs MUST use GA4GH's registered Crossref DOI prefix (`10.59756`) when minting DOIs for GA4GH documentary outputs. Associated metadata MUST be deposited with Crossref and MUST include all information required to support identification and discovery of the referenced document, including title, authors, publication date, location, and the designated `<std_designator>` value. The required metadata are listed under *Metadata Management*.
 
 DOI suffixes MUST be generated as opaque identifiers and MUST NOT encode semantic or document-specific meaning. Human-readable information SHOULD be represented through deposited metadata rather than through the DOI structure itself.
 
@@ -60,7 +61,7 @@ Each DOI registration MUST include a `<std_designator>` metadata field identifyi
 Examples include:
 
 ```text
-FEDANALYIS_WES
+FEDANALYSIS_WES
 LSG_CRAM
 CLINPHEN_PHEN
 DISCOVERY_BEACONV2
@@ -73,7 +74,7 @@ Note that over time, workstreams can change names. Use the name of the work stre
 
 ### DOI Request Process
 
-Individuals responsible for a documentary output requiring a DOI (output leads) MUST submit a DOI request through their Work Stream Leads. Work Stream Leads MUST define the metadata associated with the DOI request, including the `<std_designator>`, in collaboration with the output leads. The completed request MUST be submitted to the GA4GH Technical Team together with all required metadata (see *Metadata Management* for the complete list). The Technical Team MUST verify that the request is legitimate and appropriate prior to DOI creation. Where uncertainty exists regarding eligibility or governance, the Technical Team MAY escalate the request to the Chief Product Officer. Following DOI registration, the Technical Team MUST provide the DOI to the GA4GH Communications Team for publication through appropriate GA4GH channels. Automated versions of this process are permitted so long as the ethos of this flow is retained.
+Individuals responsible for a documentary output requiring a DOI (output leads) MUST submit a DOI request through their originating group co-leads (e.g. Work Stream, NIF, GIF, or TASC leads). These co-leads MUST define the metadata associated with the DOI request, including the `<std_designator>`, in collaboration with the output leads. The completed request MUST be submitted to the GA4GH Technical Team together with all required metadata (see *Metadata Management* for the complete list). The Technical Team MUST verify that the request is legitimate and appropriate prior to DOI creation. Where uncertainty exists regarding eligibility or governance, the Technical Team MAY escalate the request to the Chief Product Officer. Following DOI registration, the Technical Team MUST provide the DOI to the GA4GH Communications Team for publication through appropriate GA4GH channels. Automated versions of this process are permitted so long as the ethos of this flow is retained.
 
 ### Metadata Management
 
@@ -128,9 +129,9 @@ Blog posts, announcements, and news articles that require persistent citation MA
 
 ## References
 
-- \[CROSSREF\] \- [CrossRef: a DOI issuer](https://www.crossref.org/)
-- \[CROSSREF_RECORDS\] \- [CrossRef Supported Record Types](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/)
-- \[TASC-ADR-001\] - [TASC-ADR-001: Use CrossRef as the DOI Registration Authority for GA4GH](../adr/TASC-ADR-001.md)
+- \[CROSSREF\] \- [Crossref: a DOI issuer](https://www.crossref.org/)
+- \[CROSSREF_RECORDS\] \- [Crossref Supported Record Types](https://www.crossref.org/documentation/schema-library/markup-guide-record-types/)
+- \[TASC-ADR-001\] - [TASC-ADR-001: Use Crossref as the DOI Registration Authority for GA4GH](../adr/TASC-ADR-001.md)
 - \[TASC-ADR-002\] - [TASC-ADR-002: Separate Citation Identifiers from Machine-Readable Standard Identifiers](../adr/TASC-ADR-002.md)
 - \[TASC-ADR-003\] - [TASC-ADR-003: Use Opaque DOI Suffixes](../adr/TASC-ADR-003.md)
 - \[TASC-ADR-004\] - [TASC-ADR-004: Use Standard Designators for DOI Metadata Classification](../adr/TASC-ADR-004.md)

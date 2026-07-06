@@ -11,7 +11,7 @@
 
 ## Context
 
-DOIs require both a unique identifier and sufficient metadata to support discovery and management. A key design consideration was whether information about a standard should be embedded directly within the DOI suffix itself or maintained separately in metadata. Embedding semantic meaning within identifiers can improve readability but creates governance, maintenance, and lifecycle management challenges as standards evolve. CrossRef guidance also recommends avoiding meaningfully encoded identifiers wherever possible.
+DOIs require both a unique identifier and sufficient metadata to support discovery and management. A key design consideration was whether information about a standard should be embedded directly within the DOI suffix itself or maintained separately in metadata. Embedding semantic meaning within identifiers can improve readability but creates governance, maintenance, and lifecycle management challenges as standards evolve. Crossref guidance also recommends avoiding meaningfully encoded identifiers wherever possible.
 
 **The Problem:**
 
