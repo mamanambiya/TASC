@@ -66,13 +66,13 @@ The CPO ensures that the team creates GA4GH-wide technical alignment and that th
 
 | Member | Work Stream |
 |--------|-------------|
-| **Michael Baudis** | Discovery |
+| **Nara Sobreira, David Bujold & Miro Cupak** | Discovery |
 | **Venkat Malladi & Brian O’Connor** | Cloud |
-| **John Marshall** | Large Scale Genomics |
 | **Jaime Guidry Auvil & Jonathan Lawson** | DURI |
 | **Alex Wagner & Melissa Cline** | GKS |
 | **Benjamin Berk & Monica Munoz-Torres** | Clin/Pheno |
 | **Tom Conner & Jaime Delgado** | Data Security |
+| **Marc Fiume & Susheel Varma** | AIWS |
 
 Two volunteer representatives from each technical Work Stream and Data Security–preferably the Work Stream Co-leads–provide knowledge and insight for their respective GA4GH products and communicate as liaisons.
 
@@ -90,6 +90,7 @@ TASC also enlists support from the GA4GH Staff Technical Team to encourage techn
 | **Deeptha Srirangam** | Technical Team |
 | **Angela Page** | Communications Team |
 | **Jon Turner** | Web Development Team |
+| **Jeremy Adams** | Web Development Team |
 
 #### Other Non-Voting Members
 - Invited representative(s) from the Strategic Leadership Committee (SLC)
@@ -113,6 +114,8 @@ TASC also enlists support from the GA4GH Staff Technical Team to encourage techn
 | Neerjah Skantharajah | Technical Team |
 | Yasmeen Kurdi | Technical Team |
 | Alex Tsai | Technical Team |
+| John Marshall | Large Scale Genomics |
+| Michael Baudis | Discovery |
 
 ## Group Meeting Format
 
