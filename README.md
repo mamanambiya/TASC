@@ -87,10 +87,10 @@ TASC also enlists support from the GA4GH Staff Technical Team to encourage techn
 | **Jimmy Payyappilly** | Technical Team |
 | **Chen Chen** | Technical Team |
 | **Dashrath Chauhan** | Technical Team |
-| **Deeptha Srirangam** | Technical Team |
+| **Jeremy Adams** | Technical Team |
 | **Angela Page** | Communications Team |
 | **Jon Turner** | Web Development Team |
-| **Jeremy Adams** | Web Development Team |
+
 
 #### Other Non-Voting Members
 - Invited representative(s) from the Strategic Leadership Committee (SLC)
