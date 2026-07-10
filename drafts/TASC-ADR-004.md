@@ -44,7 +44,7 @@ GA4GH requires a consistent mechanism to classify and manage DOI registrations a
 
 ## Decision
 
-GA4GH will require all DOI registrations to include a standard designator (`std_designator`) that identifies the originating Work Stream and the associated documentary output. The standard designator will be used as a metadata classification mechanism and will not form part of the DOI itself.
+GA4GH will require all DOI registrations to include a standard designator (`std_designator`) that identifies the originating group and the associated documentary output. The standard designator will be used as a metadata classification mechanism and will not form part of the DOI itself.
 
 **Key Points:**
 
@@ -52,7 +52,7 @@ GA4GH will require all DOI registrations to include a standard designator (`std_
 - Standard designators MUST follow the format:
 
   ```text
-  <WORK_STREAM_ACRONYM>_<DOCUMENT_NAME>
+  <ORIGINATING_GROUP_ACRONYM>_<DOCUMENT_NAME>
   ```
 
 Standard designators SHOULD remain stable over the lifetime of the referenced documentary output and therefore link items together.
@@ -61,9 +61,8 @@ Examples:
 
 ```text
 TASC_TS
-CLOUD_WES
-LSG_CRAM
-CLINPHEN_PHEN
+FEDANALYSIS_WES
+CLINPHENO_PHEN
 DISCOVERY_BEACONV2
 REWS_GDPRPRIMER
 ```
@@ -88,8 +87,17 @@ REWS_GDPRPRIMER
 
 ### Risks & Mitigations
 
-**Risk:** Different Work Streams adopt inconsistent naming patterns
-- **Mitigation:** Publish and maintain a controlled naming convention managed through the DOI registration process
+**Risk:** Different originating groups adopt inconsistent naming patterns
+- **Mitigation:** Publish and maintain a controlled naming convention managed through the DOI registration process. Document the naming convention and index its subcomponents (`<ORIGINATING_GROUP_ACRONYM>`, `<DOCUMENT_NAME>`) in the Technical Team's central register — see [originating-group-acronyms.yaml](./originating-group-acronyms.yaml) for the authoritative list of `<ORIGINATING_GROUP_ACRONYM>` values — so clashes and inconsistencies can be checked before registration
 
 **Risk:** Designators become overly detailed or unstable
 - **Mitigation:** Require concise, durable naming aligned with long-term product and document identity
+
+**Risk:** Proposed designators clash with existing registrations or diverge from convention
+- **Mitigation:** As all DOI requests are routed through the Technical Team, the Technical Team MUST check proposed `<std_designator>` values against the central register before registration
+
+---
+
+## References
+
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)

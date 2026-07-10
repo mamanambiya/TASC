@@ -81,13 +81,16 @@ GA4GH will generate DOI suffixes as opaque, non-semantic identifiers
 **Risk:** Users attempt to infer meaning from DOI values
 - **Mitigation:** Publish guidance stating that meaning is carried through metadata and standard designators rather than the DOI suffix
 
+**Risk:** Opaque suffixes reduce administrative discoverability of registrations
+- **Mitigation:** The Technical Team maintains a central register indexing assigned suffixes against their `<std_designator>` values, restoring discoverability without encoding meaning in the DOI itself
+
 
 ---
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md)
-- **Related ADRs:** [TASC-ADR-001: Adopt a GA4GH DOI-Based Citation Framework](./TASC-ADR-001.md)
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
+- **Related ADRs:** [TASC-ADR-001: Use Crossref as the DOI Registration Authority for GA4GH](./TASC-ADR-001.md)
 
 ---
 

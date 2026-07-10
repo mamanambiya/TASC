@@ -11,7 +11,7 @@
 
 ## Context
 
-During discussions around standard citation, concerns were raised regarding the use of identifiers within APIs, schemas, registries, and machine-readable metadata
+During discussions around standard citation, concerns were raised regarding the use of identifiers within APIs, schemas, registries, and machine-readable metadata.
 
 **The Problem:**
 - Human citation and machine identification solve different problems
@@ -38,12 +38,13 @@ During discussions around standard citation, concerns were raised regarding the 
 
 ## Decision
 
-GA4GH will use DOIs for documentary citation only. Future machine-readable identifier schemes MAY be developed independently where required for APIs, service registries, metadata models, and protocol implementations
+GA4GH will use DOIs for documentary citation only. Future machine-readable identifier schemes MAY be developed independently where required for APIs, service registries, metadata models, and protocol implementations.
 
 **Key Points:**
 - A DOI MUST NOT be considered the sole identifier mechanism for all standards-related use cases
 - Citation requirements and interoperability requirements SHOULD be governed separately
 - Future identifier frameworks MAY complement DOI-based citation
+- Documentation of this separation of concerns MUST be maintained at both the product level (e.g. in product documentation) and centrally by the GA4GH Technical Team (e.g. as a public listing), so that implementers can find it regardless of where they start looking
 
 ---
 
@@ -69,7 +70,7 @@ GA4GH will use DOIs for documentary citation only. Future machine-readable ident
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md)
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
 
 ---
 

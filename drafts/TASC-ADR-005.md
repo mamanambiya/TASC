@@ -19,6 +19,7 @@ While developing the GA4GH DOI citation mechanism for documentary outputs (stand
 - Extending GA4GH's DOI program to cover datasets would significantly broaden its scope beyond documentary citation
 - GA4GH does not operate data hosting or curation functions
 - Established persistent identifier ecosystems for datasets already exist and are maintained by organisations with the relevant data governance responsibilities
+- Some products bundle test data within an official release's test suite. Such bundled test data is considered part of that product's documentary output (and therefore in scope for a DOI covering the release), rather than a standalone research dataset. Edge cases MUST be resolved case-by-case by the originating group together with the Technical Team
 
 **Alternatives Considered:**
 
@@ -43,7 +44,7 @@ GA4GH will not use, or extend, its DOI mechanism to serve as the persistent iden
 
 - GA4GH-minted DOIs MUST NOT be used as a general-purpose persistent identifier mechanism for datasets, tools, or other research resources
 - Datasets requiring persistent identifiers SHOULD use established dataset-identifier mechanisms appropriate to where they are hosted or governed
-- This decision bounds the scope of the [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md), which applies only to documentary outputs
+- This decision bounds the scope of the [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md), which applies only to documentary outputs
 
 ---
 
@@ -63,12 +64,12 @@ GA4GH will not use, or extend, its DOI mechanism to serve as the persistent iden
 ### Risks & Mitigations
 
 **Risk:** Confusion arises over whether a GA4GH DOI can be used to cite a dataset
-- **Mitigation:** State explicitly in the [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md) that the recommendation does not apply to datasets, tools, or other research resources
+- **Mitigation:** State explicitly in the [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md) that the recommendation does not apply to datasets, tools, or other research resources
 
 ---
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Documentation Recommendation](../drafts/Citing%20GA4GH%20Documentation.md)
+- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
 
 

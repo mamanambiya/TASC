@@ -1,0 +1,81 @@
+# Registry of <ORIGINATING_GROUP_ACRONYM> values for the `<std_designator>` metadata
+# field described in the "Citing GA4GH Documentation" recommendation (GA4GH-REC-05)
+# and TASC-ADR-004.
+#
+# Rules (mirrors namespace-resolver/identifier-prefixes.yaml):
+# - Keep entries alphabetical by acronym.
+# - Never remove an entry. Renamed or retired groups are kept with
+#   status: superseded and a note explaining the replacement.
+# - The Technical Team MUST check a proposed acronym against this list before
+#   registering a DOI, to avoid clashes (see "DOI Request Process").
+#
+# Status of this file: first draft. Populated from acronyms already committed
+# to as examples in the Citing GA4GH Documentation recommendation and its ADRs,
+# cross-checked against the Work Streams/committees listed in
+# .github/ISSUE_TEMPLATE/issue.yml.
+
+originating_group_acronyms:
+
+  - acronym: CLINPHENO
+    name: Clinical and Phenotypic Data Capture and Exchange Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: FEDANALYSIS
+    name: Cloud Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: DATASEC
+    name: Data Security Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: DISCOVERY
+    name: Discovery Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: DURI
+    name: Data Use & Researcher Identities Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: GA4GHWEB
+    name: GA4GH web content (blog posts, announcements, news)
+    type: content-category
+    status: proposed
+
+  - acronym: GIF
+    name: Genomic Implementation Forum
+    type: forum
+    status: proposed
+    note: >
+      Named explicitly as an eligible originating group in the Citing GA4GH
+      Documentation recommendation's Recommendation section, and listed in
+      the TASC issue template.
+
+  - acronym: GKS
+    name: Genomic Knowledge Standards Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: NIF
+    name: National Initatives Forum
+    type: forum
+    status: proposed
+
+  - acronym: REWS
+    name: Regulatory and Ethics Work Stream
+    type: work-stream
+    status: proposed
+
+  - acronym: TASC
+    name: Technical Alignment Sub-Committee
+    type: committee
+    status: proposed
+
+  - acronym: TECH
+    name: GA4GH Technical Team
+    type: technical-team
+    status: proposed
