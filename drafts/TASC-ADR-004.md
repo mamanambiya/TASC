@@ -100,4 +100,4 @@ REWS_GDPRPRIMER
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
+- **Full Recommendation:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)

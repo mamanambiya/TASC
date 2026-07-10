@@ -29,7 +29,7 @@ This recommendation provides a uniform and consistent way for citing GA4GH produ
 
 ## Recommendation
 
-For significant GA4GH documentary outputs (e.g. products, standards, protocols, technical specifications, white papers, and selected blog posts) requiring a persistent identifier, Digital object identifiers (DOI) MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. DOIs MUST be registered using the GA4GH approved Registration Agency, currently Crossref. DOI suffixes MUST be an opaque random string with no semantic meaning. The *Detailed Guidance* lists the minimal metadata that MUST be provided, which include the `<std_designator>` metadata field, pointing to the originating group.
+For significant GA4GH documentary outputs (e.g. products, standards, protocols, technical specifications, white papers, and selected blog posts) requiring a persistent identifier, Digital object identifiers (DOI) MUST use the GA4GH prefix `10.59756` resulting in DOIs with the following format `https://doi.org/10.59756/SUFFIX`. DOIs MUST be registered using the GA4GH approved Registration Agency, currently Crossref. DOI suffixes MUST be an opaque random string with no semantic meaning and encoding no fragile metadata. The *Detailed Guidance* lists the minimal metadata that MUST be provided, which include the `<std_designator>` metadata field, pointing to the originating group.
 
 Registration requests MUST be submitted by raising a GitHub issue in the TASC repository, addressed to the originating group's co-leads (e.g. Work Stream, NIF, GIF, TASC) and then to the Technical Team, unless another automated minting method has been created. See *DOI Request Process* for the complete workflow.
 

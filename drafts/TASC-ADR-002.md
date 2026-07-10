@@ -66,11 +66,16 @@ GA4GH will use DOIs for documentary citation only. Future machine-readable ident
 **Risk:** Users become confused by multiple identifiers
 - **Mitigation:** Clearly document the purpose and scope of each identifier type
 
+**Risk:** Where should documentation of DOIs live
+- **Mitigation:** Tech team maintain a registry of registered DOIs
+- **Mitigation:** Recommendation suggests using CITATION.cff as a way to organise these data
+- **Mitigation:** GA4GH website will also hold some of these
+
 ---
 
 ## References
 
-- **Full Policy:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
+- **Full Recommendation:** [Citing GA4GH Documentation Recommendation](./Citing%20GA4GH%20Documentation.md)
 
 ---
 
