@@ -78,15 +78,15 @@ Note that over time, originating groups can change names (e.g. Work Streams are 
 Individuals responsible for a documentary output requiring a DOI (output leads) MUST submit a DOI request through their originating group co-leads (e.g. Work Stream, NIF, GIF, or TASC leads). These co-leads MUST define the metadata associated with the DOI request, including the `<std_designator>`, in collaboration with the output leads. The completed request MUST be submitted to the GA4GH Technical Team, by raising a GitHub issue in the TASC repository, together with all required metadata (see *Metadata Management* for the complete list). The Technical Team MUST verify that the request is legitimate and appropriate, and that the proposed `<std_designator>` does not clash with an existing entry in the register, prior to DOI creation. Where uncertainty exists regarding eligibility or governance, the Technical Team MAY escalate the request to the Chief Product Officer. Following DOI registration, the Technical Team MUST provide the DOI to the GA4GH Communications Team for publication through appropriate GA4GH channels. Automated versions of this process are permitted so long as the ethos of this flow is retained.
 
 ```mermaid
-flowchart LR
-    A[Output lead identifies a\ndocumentary output requiring a DOI] --> B[Originating group co-leads\ndefine required metadata,\nincluding std_designator]
-    B --> C[Request submitted to\nTechnical Team via\nGitHub issue]
-    C --> D{Request valid and\ndesignator unique?}
-    D -- No --> E[Escalate to\nChief Product Officer]
-    E --> C
-    D -- Yes --> F[Technical Team registers\nDOI with Crossref]
-    F --> G[DOI and metadata added\nto Technical Team register]
-    G --> H[Communications Team\npublishes DOI via\nGA4GH channels]
+flowchart TB
+    A["Output lead identifies a documentary output requiring a DOI"] --> B["Originating group co-leads define required metadata, including std_designator"]
+    B -- "`_Co-leads collate and submit_`" --> C["Request submitted to Technical Team"]
+    C --> D{"Request valid and designator unique?"}
+    D -- NO --> E["Escalate to Chief Product Officer"]
+    E -- "`**Decision resolved**`" --> C
+    D -- YES --> F[Technical Team registers DOI with Crossref]
+    F --> G[DOI and metadata added to Technical Team register]
+    G --> H[Communications Team publishes DOI via GA4GH channels]
 ```
 
 ### Metadata Management
