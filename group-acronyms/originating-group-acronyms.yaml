@@ -1,0 +1,80 @@
+# Registry of <ORIGINATING_GROUP_ACRONYM> values for the `<std_designator>` metadata
+# field described in the "Citing GA4GH Documentation" recommendation (GA4GH-REC-05)
+# and TASC-ADR-004.
+#
+# Rules (mirrors namespace-resolver/identifier-prefixes.yaml):
+# - Keep entries alphabetical by acronym.
+# - Never remove an entry. Renamed or retired groups are kept with
+#   status: superseded and a note explaining the replacement.
+# - The Technical Team MUST check a proposed acronym against this list before
+#   registering a DOI, to avoid clashes (see "DOI Request Process").
+#
+# Acceptable statuses: 
+# - proposed
+# - live
+# - superseded
+#
+
+originating_group_acronyms:
+  - acronym: CLINPHENO
+    name: Clinical and Phenotypic Data Capture and Exchange Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: DATASEC
+    name: Data Security Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: DISCOVERY
+    name: Discovery Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: DURI
+    name: Data Use & Researcher Identities Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: FEDANALYSIS
+    name: Cloud Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: GA4GHWEB
+    name: GA4GH web content (blog posts, announcements, news)
+    type: content-category
+    status: live
+
+  - acronym: GIF
+    name: Genomic Implementation Forum
+    type: forum
+    status: live
+    note: >
+      Named explicitly as an eligible originating group in the Citing GA4GH
+      Documentation recommendation's Recommendation section
+
+  - acronym: GKS
+    name: Genomic Knowledge Standards Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: NIF
+    name: National Initiatives Forum
+    type: forum
+    status: live
+
+  - acronym: REWS
+    name: Regulatory and Ethics Work Stream
+    type: work-stream
+    status: live
+
+  - acronym: TASC
+    name: Technical Alignment Sub-Committee
+    type: committee
+    status: live
+
+  - acronym: TECH
+    name: GA4GH Technical Team
+    type: technical-team
+    status: live
