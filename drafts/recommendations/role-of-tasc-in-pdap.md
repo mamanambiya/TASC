@@ -150,10 +150,26 @@ This document applies in the first instance to new products entering PDAP v2, wh
 
 ## Contributors
 
+Participants in the GA4GH 2026 TASC Workshop, 7–10 July 2026:
+
 | Name | Organisation |
 | :-- | :-- |
-| Mamana Mbiyavanga | University of Cape Town / TASC Co-lead |
 | Andy Yates | EMBL-EBI / TASC Co-lead |
+| Mamana Mbiyavanga | University of Cape Town / TASC Co-lead |
+| Sasha Siegel | EMBL-EBI / GA4GH Chief Product Officer |
+| Alex Wagner | Nationwide Children's Hospital / GKS |
+| Larry Babb | Broad Institute / GKS |
+| Melissa Cline | UC Santa Cruz / GKS |
+| Monica Munoz-Torres | University of Colorado Anschutz / Clin-Pheno |
+| Robert Freimuth | Mayo Clinic / GKS |
+| Brian O'Connor | Nimbus Informatics / Federated Analysis (Cloud) |
+| Miro Cupak | DNAstack / Discovery |
+| David Bujold | McGill University / Discovery |
+| Jon Turner | Wellcome Sanger Institute / Web Development |
+| Jimmy Payyappilly | EMBL-EBI / Technical Team |
+| Jeremy Adams | Ontario Institute for Cancer Research / Technical Team |
+| Dashrath Chauhan | EMBL-EBI / Technical Team |
+| Tom Conner | Broad Institute / Data Security |
 
 ## Notes
 
