@@ -1,9 +1,9 @@
-# What TASC Does in the PDAP, and What to Expect
+# Role of TASC in the PDAP
 
 **Document Type**: Directive  
 **Document ID**: *unassigned*  
 **Source**: TASC  
-**Title**: What TASC Does in the PDAP, and What to Expect from TASC  
+**Title**: Role of TASC in the PDAP  
 **Related GitHub issues**: [#93](https://github.com/ga4gh/TASC/issues/93), [#90](https://github.com/ga4gh/TASC/issues/90), [#91](https://github.com/ga4gh/TASC/issues/91), [#92](https://github.com/ga4gh/TASC/issues/92)  
 **Raised by**: Andy Yates (TASC Co-lead)  
 **Authors**: Mamana Mbiyavanga  
